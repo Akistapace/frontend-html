@@ -64,7 +64,7 @@ Projeto realizado sob as melhores práticas de desenvolvimento. Testado e aprova
   <img alt="Avaliação Desktop" title="Avaliação Desktop" src="src/assets/desktop.PNG" width="100%>
 
 </p>
-
+---
 ###  :iphone: Mobile
 <p align="center">
 
