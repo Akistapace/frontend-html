@@ -1,14 +1,15 @@
-.dropdown p {
+.dropdown .menu-enter {
   cursor: pointer;
+  font: normal normal 600 16px "OpenSans-SemiBold";
 }
-.dropdown p::after{
+.dropdown .menu-enter::after{
   content: url(../assets/icon-arrow-down.svg);
   transform: rotate(180deg);
   position: absolute;
   margin-left: 5px;
   margin-top: 3px;
 }
-.dropdown:hover p::after{
+.dropdown:hover .menu-enter::after{
   content: url(../assets/icon-arrow-down.svg);
   transform: rotate(0deg);
   position: absolute;
@@ -30,15 +31,21 @@
   text-align: center;
   padding: 5px 0;
   cursor: pointer;
+  font: normal normal bold 15px "OpenSans-Bold";
 }
 .dropdown:hover ul {
   display: block;
 }
 .dropdown ul li:hover {
   background-color: #F1F1F1;
+  font: normal normal 600 15px "OpenSans-SemiBold";
 }
 @media (max-width:1000px) {
   .dropdown ul {
-    
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    margin: 0;
+    margin-top: 20px;
   }
 }

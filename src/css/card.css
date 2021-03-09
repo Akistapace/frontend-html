@@ -5,6 +5,20 @@
   border-radius: 8px;
   margin: 10px;
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.card .close::after {
+  content: 'x';
+  font: normal normal bold 14px 'OpenSans-Bold';
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  background: #000000;
+  color: #fff;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
 }
 .card-img {
   height: 80px;
@@ -13,4 +27,11 @@
 }
 .card-body {
     margin:15px;
+    flex: 1;
+    word-break: break-all;
+    text-align: left;
+    font: normal normal normal 14px 'OpenSans-Regular';
+}
+.card-body h2 {
+  font: normal normal bold 18px 'OpenSans-Bold';
 }
