@@ -50,6 +50,8 @@ Em caso de dúvida entre em contato pelo skype **matheusmoovin**
 
 Projeto desenvolvido para o desafio proposto pela empresa [Moovin](https://www.moovin.com.br/) para vaga de desenvolvedor Front-End 
 
+-[Visualizar projeto publicado](https://akistapace.github.io/frontend-html/):  
+
 ---
 
 ##  :mag_right: Lighthouse
@@ -60,14 +62,13 @@ Projeto realizado sob as melhores práticas de desenvolvimento. Testado e aprova
 - Práticas recomendadas
 
 ### :computer: Desktop
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Avaliação Desktop" title="Avaliação Desktop" src="src/assets/desktop.PNG" width="100%>
-
-</p>
----
-###  :iphone: Mobile
 <p align="center">
-
+  <img alt="Avaliação Desktop" title="Avaliação Desktop" src="src/assets/desktop.PNG" width="100%">
+</p>
+											     
+---
+### :iphone: Mobile
+<p align="center">
   <img alt="Avaliação Mobile" title="Avaliação Mobile" src="src/assets/mobile.PNG" width="100%">
 </p>
 
