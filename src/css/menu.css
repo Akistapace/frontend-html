@@ -1,0 +1,126 @@
+.menu-stripe,
+.menu--stripe-inner,
+.menu-contacts,
+.menu-callpages {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;   
+  width: 100%;
+}
+.menu-stripe {
+  background: #F1F1F1;
+  width: 100%;
+  height: 32px;  
+  padding: 0 30px;
+}
+.menu--stripe-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+.menu-contacts {
+  max-width: 300px;
+  color: #000000;
+}
+.menu-contacts li:first-child::before {
+  content: url(../assets/icon-phone.svg);
+  position: absolute;
+  margin-left: -20px; 
+  margin-top: -2px;   
+}
+.menu-contacts li:last-child::before {
+  content: url(../assets/icon-whats.svg);
+  position: absolute;
+  margin-left: -20px;  
+  margin-top: 2px;  
+}
+.menu-callpages {
+  max-width: 500px;
+}
+.menu-callpages li a {
+  color: #000000;
+  text-transform: uppercase;
+}
+.menu-nav {   
+  height: 110px;
+  background: #FFFFFF;
+  margin: auto;
+  padding: 30px;
+}
+
+.menu--inner {
+  max-width: 1050px;
+  margin: auto;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;  
+}
+.menu--inner img {
+  max-width: 139px;
+}
+.menu--inner label::after {
+  content: url(../assets/icon-search.svg);
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+.menu--inner input {
+  width: 670px;
+  height: 50px;
+}
+.menu--itens {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 120px ;
+}
+.bag-buy {
+  max-height: 27px;
+  max-width: 24px; 
+  cursor: pointer;
+}
+.bag-buy:hover {
+  transform: scale(1.1); 
+}
+span[data-qnt] {
+  content: "";
+  width: 18px;
+  height: 15px;
+  background-color: #000000;
+  border-radius: 100%;
+  padding: 10px;
+  position:absolute;
+  margin-left: -13px;
+  margin-top: 10px;
+}
+span[data-qnt]::after {
+  content: attr(data-qnt);
+  text-align: center;
+  font-size: 11px;
+  position:relative;
+  top: -10px;
+  margin-left: -2.5px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  z-index: 3;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F1F1F1;
+}
+@media (max-width:1000px) {
+    .menu-nav {
+        height: fit-content;
+        padding: 10px;
+    } 
+    .menu--inner  {
+        flex-direction: column;
+    }
+    .menu--inner input {
+        width: 100%; 
+        max-width: 670px;
+        margin-bottom: 20px;
+    }
+}

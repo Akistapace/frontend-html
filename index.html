@@ -1,16 +1,83 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-
-    <title>Moovin</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Moovin">
+    <title>Moovin</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/dropdown.css">
+    <link rel="stylesheet" href="src/css/cart.css">
+    <link rel="stylesheet" href="src/css/card.css">
 </head>
-
 <body>
-    <!-- Write your code here -->
+    <header class="menu">
+        <div class="menu-stripe">
+            <div class="menu--stripe-inner">
+                <ul class="menu-contacts">
+                    <li>(51) 9 9920 0350</li>
+                    <li>(51) 9 9920 0350</li>
+                </ul>
+                <ul class="menu-callpages">
+                    <li><a href="#">Lista de Desejos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Trocas e devoluções</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="menu-nav">
+            <div class="menu--inner">
+                <a href="https://www.moovin.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="src/assets/logo-moovin.svg" alt="Logo Moovin">
+                </a>
+                <form action="" method="GET">
+                   <label for="search"><input type="text" name="search" id="search" placeholder="O que você está procurando?" aria-placeholder="O que você está procurando?"></label>
+                </form>
+                <div class="menu--itens">
+                    <div class="dropdown">
+                        <p>Entrar</p>
+                        <ul>
+                        <li>Minha conta</li>
+                        <li>Meus pedidos</li>
+                        <li>Lista de desejos</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img id="teste" class="bag-buy" src="src/assets/icon-bag-buy.svg" alt="Sacola de compras">
+                        <span data-qnt="0"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="cart">
+            <header>
+                <span id="close-cart">X</span>
+                <h3>Cart</h3>
+            </header>
+            <div class="cart-body">
+                <div class="card">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <h2>title</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"></div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <script src="src/js/cart.js"></script>
+    </footer>
 </body>
-
 </html>
